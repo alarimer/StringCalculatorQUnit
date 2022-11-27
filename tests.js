@@ -9,4 +9,15 @@ QUnit.module("StringCalculator", function () {
         // assert
         assert.equal(actual, expected);
     });
+
+    QUnit.test("SingleNumber_ReturnsNumber", function (assert) {
+        // arange
+        let expected = 1;
+
+        // act
+        let actual = add('1');
+
+        // assert
+        assert.equal(actual, expected);
+    });
 });
