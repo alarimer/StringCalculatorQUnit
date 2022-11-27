@@ -20,4 +20,15 @@ QUnit.module("StringCalculator", function () {
         // assert
         assert.equal(actual, expected);
     });
+
+    QUnit.test("TwoNumbersSeparatedWithComma_ReturnsSum", function (assert) {
+        // arange
+        let expected = 5;
+
+        // act
+        let actual = add('2,3');
+
+        // assert
+        assert.equal(actual, expected);
+    });
 });
